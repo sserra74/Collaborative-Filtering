@@ -5,7 +5,7 @@ Follow the instructions below in order to run the project correctly:
 * Download the dataset from http://files.grouplens.org/datasets/movielens/ml-latest.zip and take only the movies.csv and ratings.csv
 * Copy them into the files folder inside Collaborative Filtering
 
-#Terraform Changes
+# Terraform Changes
 Open the main.tf file inside Collaborative Filtering folder and following instructions:
 * The S3 bucket name, because every bucket is unique. Change it in Amazon S3 section (line 246 in main.tf )
 and its occurrences.
@@ -25,7 +25,7 @@ by Athena, you have to comment some code inside the main.tf file. In particular,
 only the Collaborative-Filtering and the baseline, comment from 263 to 477 and the steps inside the cluster
 from 615 to 724.
 
-#Pyhton Changes
+# Pyhton Changes
 * Inside the methods.py and baseline.py files, in order to get the CSV files from S3, it’s necessary to change
 the path given inside sc.textFile() with your S3 bucket name. Edit those in lines 15 and 37 in methods.py
 and in lines 31 and 48 in baseline.py
