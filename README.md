@@ -1,5 +1,5 @@
 # Collaborative-Filtering
-Big Data Project with the aim of returning the best 25 recommendations for a new user on the base on the common interests between him and other users
+Big Data Project with the aim of returning the best 25 recommendations for a new user on the base on the common interests between him and other users. We have used Terraform in order to create the infrastructure, Apache Spark in order to manage large data, AWS services and Pyhton with PySpark and the ALS method in order to develop the Collaborative Filtering Approach.
 
 ## Our goal
 Our goal is to make the project execution as automatic as possible, so that the user has to enter as little information as possible. So, in general, you have to change only the paths and the instances that you want to use. 
