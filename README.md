@@ -1,5 +1,5 @@
 # Collaborative-Filtering
-Big Data Project with the aim of returning the best 25 recommendations for a new user on the base on the common interests between him and other users. We have used Terraform in order to create the infrastructure, Apache Spark in order to manage large data, AWS services and Pyhton with PySpark and the ALS method in order to develop the Collaborative Filtering approach.
+Big Data Project with the aim of returning the best 25 recommendations for a new user on the base on the common interests between him and other users. We have used Terraform in order to create the infrastructure, Apache Spark in order to manage large data, AWS services and Python with PySpark and the ALS method in order to develop the Collaborative Filtering approach.
 
 ## Our goal
 Our goal is to make the project execution as automatic as possible, so that the user has to enter as little information as possible. So, in general, you have to change only the paths and the instances that you want to use. 
@@ -28,7 +28,7 @@ by Athena, you have to comment some code inside the main.tf file. In particular,
 only the Collaborative-Filtering and the baseline, comment from 263 to 477 and the steps inside the cluster
 from 615 to 724.
 
-## Pyhton changes
+## Python changes
 * Inside the methods.py and baseline.py files, in order to get the CSV files from S3, it’s necessary to change
 the path given inside sc.textFile() with your S3 bucket name. Edit those in lines 15 and 37 in methods.py
 and in lines 31 and 48 in baseline.py
