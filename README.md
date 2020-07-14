@@ -32,3 +32,13 @@ and in lines 31 and 48 in baseline.py
 
 
 * Go to CollaborativeFiltering/files and zip with the name zippo all the .py files 
+
+## Run the project
+* Launch the command terraform init inside the folder where there is the main.tf file to initialize a working directory containing
+configuration files.
+* Then, you can launch terraform plan in order to check which objects will be created.
+* Afterwards, so as to apply this plan, launch the command terraform apply -auto-approve (this action will
+take several minutes).
+* Finally, if you want to shoot down your infrastructure, launch the command terraform destroy -auto-
+approve (-auto-approve allows to skip interactive approval of the plan). Sometimes you have to manually
+destroy the S3 bucket from the AWS console
